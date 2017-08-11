@@ -1,0 +1,4 @@
+<ul>
+    <li ng-repeat="mean in users"
+    ng-show="user._id !==mean._id">{{mean.email}}<a href="follow(user._id,mean._id)"></a></li>
+</ul>
