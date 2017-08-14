@@ -30,6 +30,8 @@ app.post('/api/profile/editPhoto',multipartMiddleware,profileController.updatePh
 app.post('/api/profile/updateUsername',profileController.updateUsername);
 app.post('/api/profile/updateBio',profileController.updateBio);
 app.post('/api/mean/post',meanController.postMean);
+app.post('/api/users/follow',usersController.followUser);
+app.post('/api/users/unfollow',usersController.unfollowUser);
 app.get('/api/user/login',function(req,res){
     res.send('hi hello')});
 app.get('/api/profile/editPhoto',function(req,res){

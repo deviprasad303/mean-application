@@ -20,7 +20,9 @@ module.exports.login=function(req,res){
         {
 var userData=results[0];
             res.json({email:req.body.email,_id:userData._id,username:userData.username,
-            image:userData.image});
+            image:userData.image,
+            following:userData.following,
+            followers:userData.followers});
         }
     })
 
