@@ -3,6 +3,7 @@
  */
 var mongoose=require('mongoose');
 module.exports=mongoose.model('mean',{
+
     user:String,
     userId:String,
     content: String,

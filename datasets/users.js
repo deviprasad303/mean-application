@@ -10,5 +10,9 @@ module.exports=mongoose.model('User',{
     userImage:String,
     bio:String,
     following:[{userId:String,username:String}],
-    followers:[{userId:String,username:String}]
+    followers:[{userId:String,username:String}],
+    tasks:[{taskname:String, Days_Pending:number}],
+    Comment:[{userId:String,taskname:String,comment:String}],
+    groups:[{groupId:String}],
+    Notifications:String
 });
